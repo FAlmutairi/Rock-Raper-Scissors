@@ -94,6 +94,9 @@
                                                     <fontDescription key="titleFontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
                                                     <color key="baseForegroundColor" red="0.40000000000000002" green="0.36078431372549019" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="startPressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fDB-NP-yxU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.68627450980000004" green="0.81568627449999997" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -147,6 +150,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="FirstPlayerImage" destination="SJa-xa-fNs" id="v5s-Pn-jR3"/>
+                        <outlet property="SecandPlayerImage" destination="PSp-6l-xQH" id="Vmd-Wl-umN"/>
                         <outlet property="UiViewBackground" destination="dhI-Sg-iqN" id="MaD-XV-TYS"/>
                         <outlet property="startButton" destination="hg4-iL-vEi" id="W7S-Uz-64h"/>
                     </connections>
