@@ -21,8 +21,13 @@ class ViewController: UIViewController {
     var FName: String = ""
     var SName: String = ""
     
+    var playerOneChooseValue = 0
+    var playerTwoChooseValue = 0
+    
+    var game = Game()
+    
     // Array of image
-    let ArrayOfImage = [#imageLiteral(resourceName: "scissors"), #imageLiteral(resourceName: "hand"), #imageLiteral(resourceName: "Rock")]
+    let ArrayOfImage = [#imageLiteral(resourceName: "Rock"), #imageLiteral(resourceName: "hand"), #imageLiteral(resourceName: "scissors")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,20 +43,18 @@ class ViewController: UIViewController {
 
     // To get result
     @IBAction func startPressedButton(_ sender: UIButton) {
-        print("Start")
         
-        FirstPlayerImage.image = ArrayOfImage[Int.random(in: 0...2)]
-        SecandPlayerImage.image = ArrayOfImage[Int.random(in: 0...2)]
+        playerOneChooseValue = Int.random(in: 0...2)
+        playerTwoChooseValue = Int.random(in: 0...2)
         
-        if SecandPlayerImage.image == FirstPlayerImage.image {
-            print("True")
-        } else {
-            print("False")
-        }
+        FirstPlayerImage.image = ArrayOfImage[playerOneChooseValue]
+        SecandPlayerImage.image = ArrayOfImage[playerTwoChooseValue]
+        
+        print(" ---------------------------- ")
+        print(game.playerOneChoose(playerOneChooseValue))
+        print(game.playerTwoChoose(playerTwoChooseValue))
         
         
-  
-              
     }
 }
 

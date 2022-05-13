@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00299FEC282E2D0D006EFB87 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00299FEB282E2D0D006EFB87 /* Game.swift */; };
 		005F4A28278610A200B69871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F4A27278610A200B69871 /* AppDelegate.swift */; };
 		005F4A2A278610A200B69871 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F4A29278610A200B69871 /* SceneDelegate.swift */; };
 		005F4A2C278610A200B69871 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F4A2B278610A200B69871 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00299FEB282E2D0D006EFB87 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		005F4A24278610A200B69871 /* Rock Raper Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Raper Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		005F4A27278610A200B69871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		005F4A29278610A200B69871 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00299FE8282E2C87006EFB87 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				005F4A2B278610A200B69871 /* ViewController.swift */,
+				007924FC2819FC350050A799 /* RegistrationVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00299FE9282E2C9A006EFB87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00299FEB282E2D0D006EFB87 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00299FEA282E2CB9006EFB87 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				005F4A2D278610A200B69871 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		005F4A1B278610A100B69871 = {
 			isa = PBXGroup;
 			children = (
@@ -65,9 +92,9 @@
 				005F4A3B2786255600B69871 /* Fonts */,
 				005F4A27278610A200B69871 /* AppDelegate.swift */,
 				005F4A29278610A200B69871 /* SceneDelegate.swift */,
-				005F4A2B278610A200B69871 /* ViewController.swift */,
-				005F4A2D278610A200B69871 /* Main.storyboard */,
-				007924FC2819FC350050A799 /* RegistrationVC.swift */,
+				00299FE9282E2C9A006EFB87 /* Model */,
+				00299FEA282E2CB9006EFB87 /* View */,
+				00299FE8282E2C87006EFB87 /* Controller */,
 				005F4A30278610A400B69871 /* Assets.xcassets */,
 				005F4A32278610A400B69871 /* LaunchScreen.storyboard */,
 				005F4A35278610A400B69871 /* Info.plist */,
@@ -158,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				005F4A2C278610A200B69871 /* ViewController.swift in Sources */,
+				00299FEC282E2D0D006EFB87 /* Game.swift in Sources */,
 				005F4A28278610A200B69871 /* AppDelegate.swift in Sources */,
 				005F4A2A278610A200B69871 /* SceneDelegate.swift in Sources */,
 				007924FD2819FC350050A799 /* RegistrationVC.swift in Sources */,
