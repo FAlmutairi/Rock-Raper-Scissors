@@ -49,6 +49,13 @@
                                                             <constraint firstAttribute="height" constant="100" id="Heb-kK-QNP"/>
                                                         </constraints>
                                                     </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnS-h4-Pqx">
+                                                        <rect key="frame" x="74" y="154" width="38" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="Lre-Ai-ELF" secondAttribute="trailing" constant="20" symbolic="YES" id="8nq-nD-DH2"/>
@@ -76,6 +83,13 @@
                                                         <rect key="frame" x="8" y="147.66666666666663" width="166" height="27"/>
                                                         <fontDescription key="fontDescription" name="Cairo-Medium" family="Cairo" pointSize="14"/>
                                                         <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDw-KC-ssY">
+                                                        <rect key="frame" x="72" y="-11" width="38" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -155,13 +169,15 @@
                         <outlet property="SecandPlayerImage" destination="PSp-6l-xQH" id="Vmd-Wl-umN"/>
                         <outlet property="UiViewBackground" destination="dhI-Sg-iqN" id="MaD-XV-TYS"/>
                         <outlet property="firstName" destination="Lre-Ai-ELF" id="ySB-kb-IJ1"/>
+                        <outlet property="scorePlayerOne" destination="nnS-h4-Pqx" id="qYz-fm-14X"/>
+                        <outlet property="scorePlayerTwo" destination="cDw-KC-ssY" id="rBZ-oB-QtZ"/>
                         <outlet property="secandName" destination="lxc-YI-eM2" id="Ja5-H0-mwx"/>
                         <outlet property="startButton" destination="hg4-iL-vEi" id="W7S-Uz-64h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1475" y="92"/>
+            <point key="canvasLocation" x="1473.8461538461538" y="91.706161137440759"/>
         </scene>
         <!--RegistrationVC-->
         <scene sceneID="INj-aO-dWr">

@@ -18,11 +18,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var firstName: UILabel!
     @IBOutlet weak var secandName: UILabel!
     
+    @IBOutlet weak var scorePlayerOne: UILabel!
+    @IBOutlet weak var scorePlayerTwo: UILabel!
+    
+    
     var FName: String = ""
     var SName: String = ""
     
     var playerOneChooseValue = 0
     var playerTwoChooseValue = 0
+    
+    var scoreOne = 0
+    var scoreTwo = 0
     
     var game = Game()
     
@@ -39,6 +46,9 @@ class ViewController: UIViewController {
         firstName.text = "\(FName)"
         secandName.text = "\(SName)"
         
+        scorePlayerOne.text = "\(scoreOne)"
+        scorePlayerTwo.text = "\(scoreTwo)"
+        
     }
 
     // To get result
@@ -50,11 +60,23 @@ class ViewController: UIViewController {
         FirstPlayerImage.image = ArrayOfImage[playerOneChooseValue]
         SecandPlayerImage.image = ArrayOfImage[playerTwoChooseValue]
         
+        
+        let player1 = game.playerOneChoose(playerOneChooseValue)
+        let player2 = game.playerTwoChoose(playerTwoChooseValue)
+        
+//        game.checkWinner(firstPlayer: player1, secandPlayer: player2)
+        print(game.checkWinner(firstPlayer: player1, secandPlayer: player2))
+        
+        
+        
         print(" ---------------------------- ")
         print(game.playerOneChoose(playerOneChooseValue))
         print(game.playerTwoChoose(playerTwoChooseValue))
         
         
+        
     }
+    
+    
 }
 
